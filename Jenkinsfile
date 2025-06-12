@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Installer les dépendances') {
             steps {
-                bat '"C:\\Python311\\python.exe" -m pip install --upgrade pip'
-                bat '"C:\\Python311\\python.exe" -m pip install -r requirements.txt'
+                bat '"C:\\Users\\amakd\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pip install --upgrade pip'
+                bat '"C:\\Users\\amakd\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Exécuter le script') {
             steps {
-                bat '"C:\\Python311\\python.exe" scraper.py'
+                bat '"C:\\Users\\amakd\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" scraper.py'
             }
         }
 
